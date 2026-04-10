@@ -1,0 +1,95 @@
+senha = "0000"
+tentativa = input("Insira sua senha (Máximo de 3 tentativas): ")
+numero_de_tentativas = 1
+
+while tentativa != senha:
+    print("Senha errada.")
+    tentativa = input("Insira sua senha: ")
+    numero_de_tentativas += 1
+    if numero_de_tentativas > 2 and tentativa != senha:
+        print("Tentativas demais,bloqueado")
+        break
+
+if tentativa == senha:
+    print("Senha correta.")
+
+print("")
+
+saldo = 1000.00
+
+while True:
+    print("Ver saldo [1]")
+    print("Depositar dinherio [2]")
+    print("Sacar dinheiro [3]")
+    print("Sair [4]")
+    print("")
+    o_que_fazer = int(input("Insira um dos comandos: "))
+    if o_que_fazer == 1:
+        print("")
+        print("Saldo atual: €"+ str(saldo))
+        resposta = input("Voltar ao inicio? (Pressione S ou N) ")
+        while resposta == "N":
+            print("")
+            print("Saldo atual: €" + str(saldo))
+            resposta = input("Voltar ao inicio? (Pressione S ou N) ")
+            if resposta == "S":
+                break
+
+        print("")
+
+    elif o_que_fazer == 2:
+        print("")
+        print("Saldo atual: €" + str(saldo))
+        dinheiro_a_depositar = int(input("Quanto queres depositar? "))
+        saldo = (saldo + dinheiro_a_depositar)
+        print("")
+        print("Saldo atual: €" + str(saldo))
+        resposta = input("Voltar ao inicio? (Pressione S ou N) ")
+        while resposta == "N":
+            print("")
+            print("Saldo atual: €" + str(saldo))
+            resposta = input("Voltar ao inicio? (Pressione S ou N) ")
+            if resposta == "S":
+                break
+
+        print("")
+
+    elif o_que_fazer == 3:
+        print("")
+        print("Saldo atual: €" + str(saldo))
+        dinheiro_a_retirar = float(input("Quanto queres retirar? "))
+        while saldo < dinheiro_a_retirar:
+            print("Ação impossivel, a quantidade de dinherio que você que retirar é maior que seu saldo. Tente novamente.")
+            print("")
+            print("Saldo atual: €" + str(saldo))
+            dinheiro_a_retirar = int(input("Quanto queres retirar? "))
+            if(saldo >= dinheiro_a_retirar):
+                saldo = (saldo - dinheiro_a_retirar)
+                print("")
+                print("Saldo atual: €" + str(saldo))
+                resposta = input("Voltar ao inicio? (Pressione S ou N) ")
+                while resposta == "N":
+                    print("")
+                    print("Saldo atual: €" + str(saldo))
+                    resposta = input("Voltar ao inicio? (Pressione S ou N) ")
+                    if resposta == "S":
+                        print("")
+                        break
+
+            print("")
+
+    elif o_que_fazer == 4:
+        print("")
+        resposta_final = input("Tem certeza? (Pressione S ou N) ")
+        while resposta_final == "N":
+            break
+        if resposta_final == "S":
+            break
+        print("")
+    else:
+        print("")
+        print("Comando não reconhecido, tente novamente.")
+        print("")
+        continue
+
+
