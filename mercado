@@ -1,0 +1,44 @@
+print("Insira os dados do Item 1:")
+nome_do_item_1 = input("Nome do item 1: ")
+preco_do_item_1 = float(input("Preço do item 1 (em euros): "))
+quantidade_do_item_1 = int(input("Quantidade do item 1: "))
+
+print("")
+
+print("Insira os dados do Item 2:")
+nome_do_item_2 = input("Nome do item 2: ")
+preco_do_item_2 = float(input("Preço do item 2 (em euros): "))
+quantidade_do_item_2 = int(input("Quantidade do item 2: "))
+
+print("")
+
+print("Insira os dados do Item 3:")
+nome_do_item_3 = input("Nome do item 3: ")
+preco_do_item_3 = float(input("Preço do item 3 (em euros): "))
+quantidade_do_item_3 = int(input("Quantidade do item 3: "))
+
+print("")
+
+valor1 = (preco_do_item_1 * quantidade_do_item_1)
+valor2 = (preco_do_item_2 * quantidade_do_item_2)
+valor3 = (preco_do_item_3 * quantidade_do_item_3)
+valor_total = valor1 + valor2 + valor3
+
+print("")
+
+print("Resumo do Stock:")
+print("Item 1:", nome_do_item_1, "| Preço: €"+ str(preco_do_item_1), "| Quantidade de items:", quantidade_do_item_1, "| Valor Total: €"+ str(valor1))
+print("Item 2:", nome_do_item_2, "| Preço: €"+ str(preco_do_item_2), "| Quantidade de items:", quantidade_do_item_2, "| Valor Total: €"+ str(valor2))
+print("Item 3:", nome_do_item_3, "| Preço: €"+ str(preco_do_item_3), "| Quantidade de items:", quantidade_do_item_3, "| Valor Total: €"+ str(valor3))
+
+print("")
+
+print("Valor total do Stock: €"+ str(valor_total))
+
+valor4 = float(input("Quanto você tem em dinheio? "))
+if(valor4 > valor_total):
+    print("O troco será: €"+ str(valor4 - valor_total))
+elif(valor4 == valor_total):
+    print("O troco será: €0.00 ")
+else:
+    print("SALDO INSUFICIENTE")
