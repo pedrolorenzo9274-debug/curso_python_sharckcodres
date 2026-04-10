@@ -1,0 +1,32 @@
+numero1 = float(input("Escreva um numero: "))
+
+if(numero1 > 0):
+    print("O numero que você escolhe é maior que 0")
+elif(numero1 == 0):
+    print("O numero que você escolheu é igual a 0")
+else:
+    print("O numero que você escolheu é menor que 0")
+
+print("")
+
+nome = "Pedro"
+idade = 15
+print (f"Olá {nome}, você tem {idade} anos. ")
+
+print("")
+
+numero_de_alunos = int(input("Quantos alunos tem na turma? "))
+for numero in range(numero_de_alunos):
+    print("macaco")
+
+print("")
+
+numero2 = 10
+while numero2 > 5:
+    numero2 -= 1
+    print(numero2)
+
+    if numero2 == 7:
+        break
+
+print(numero2)
