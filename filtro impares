@@ -1,0 +1,13 @@
+print("Lista de numeros pares:")
+
+ultimo_numero1 = int(input("Digite um numero interio maior que 0: "))
+
+for numero in range(0, ultimo_numero1 + 1, 2):
+    print(numero)
+
+print("Lista de numeros impares:")
+
+ultimo_numero2 = int(input("Digite um numero interio maior que 0: "))
+
+for numero in range(1, ultimo_numero2, 2):
+    print(numero)
