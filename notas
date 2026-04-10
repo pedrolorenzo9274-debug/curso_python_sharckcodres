@@ -1,0 +1,19 @@
+print("MÉDIA DOS ALUNOS:")
+
+print("")
+
+nome_do_aluno1 = input("Nome do/a primeiro/a aluno/a: ")
+
+numero1 = float(input("Nota do primeiro semestre do/a " + nome_do_aluno1 + ": "))
+numero2 = float(input("Nota do segundo semestre do/a " + nome_do_aluno1 + ": "))
+numero3 = (numero1 + numero2) /2
+print("Média dos semestres do/a",nome_do_aluno1,":",numero3)
+
+print("")
+
+nome_do_aluno2 = input("Nome do/a segundo/a aluno/a: ")
+
+numero4 = float(input("Nota do primeiro semestre do/a " + nome_do_aluno2 + ": "))
+numero5 = float(input("Nota do segundo semestre do/a " + nome_do_aluno2 + ": "))
+numero6 = (numero4 + numero5) /2
+print("Média dos semestres do/a",nome_do_aluno2,": ",numero6)
