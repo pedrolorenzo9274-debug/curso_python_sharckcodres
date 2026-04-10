@@ -1,0 +1,9 @@
+primeiro_numero = int(input("Escolha um numero inteiro igual ou maior que 0: "))
+ultimo_numero = int(input("Escolha um numero inteiro maior que o numero escolhido anteriormente: "))
+
+contador = 0
+
+for numero in range(primeiro_numero, ultimo_numero + 1):
+    contador += numero
+
+print(contador)
