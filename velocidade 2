@@ -1,0 +1,16 @@
+limite_de_velocidade = 80
+
+velocidade_do_carro = float(input("Qual a velocidade do seu carro? "))
+quantidade_de_multas = int(input("Quantas multas você teve no ultimo ano?"))
+
+if(80 < velocidade_do_carro <= 100):
+    calculo_da_multa1 = ((velocidade_do_carro-limite_de_velocidade) * 7.00)
+elif(velocidade_do_carro > 100):
+    calculo_da_multa2 = float((velocidade_do_carro - limite_de_velocidade) * 20.00)
+
+if(velocidade_do_carro <= 80):
+    print("Boa viagem, tenha um bom dia")
+if(80 < velocidade_do_carro):
+    print("Você foi multado, a multa é de", calculo_da_multa1, "euros")
+elif(velocidade_do_carro > 100):
+    print("Você foi multado, a multa é de", calculo_da_multa2, "euros")
