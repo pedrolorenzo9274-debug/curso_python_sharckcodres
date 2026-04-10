@@ -1,0 +1,11 @@
+numero_de_produtos = int(input("Quantos produtos a lista têm?"))
+
+for numero in range(numero_de_produtos):
+    nome_do_item = input("Digite o nome do produto: ")
+    preco_do_item = float(input("Digite o preço do produto: "))
+    quantidade_do_item = int(input("Digite o quantidade do produto: "))
+    valor = preco_do_item * quantidade_do_item
+
+
+
+
