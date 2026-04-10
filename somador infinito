@@ -1,0 +1,11 @@
+contador = 0
+
+numero = int(input("Insira um numero: "))
+
+while numero != 0:
+    contador = contador + numero
+    numero = int(input("Insira outro numero numero: "))
+    if numero == 0:
+        break
+
+print(contador)
